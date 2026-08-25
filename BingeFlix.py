@@ -143,7 +143,6 @@ movie_titles = movies["title"].tolist()
 # TMDB SEARCH
 # ============================================================
 
-@st.cache_data(show_spinner=False)
 def tmdb_search(title):
 
     if not TMDB_API_KEY:
@@ -185,7 +184,6 @@ def tmdb_search(title):
 # TMDB GENRES
 # ============================================================
 
-@st.cache_data(show_spinner=False)
 def tmdb_genres():
 
     if not TMDB_API_KEY:

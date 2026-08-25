@@ -27,6 +27,19 @@ TMDB_API_KEY = st.secrets["TMDB_API_KEY"]
 TMDB_BASE = "https://api.themoviedb.org/3"
 TMDB_IMAGE = "https://image.tmdb.org/t/p/w500"
 
+st.write("TMDB key loaded:", bool(TMDB_API_KEY))
+
+test_response = requests.get(
+    f"{TMDB_BASE}/search/movie",
+    params={
+        "api_key": TMDB_API_KEY,
+        "query": "Avatar"
+    },
+    timeout=10
+)
+
+st.write("TMDB API status:", test_response.status_code)
+
 
 # ============================================================
 # LOAD MODEL

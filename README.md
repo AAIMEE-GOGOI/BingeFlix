@@ -1,12 +1,10 @@
 <div align="center">
 
-<h1>
-<font color="#E50914">🍿 BingeFlix</font>
-</h1>
+<img src="BingeFlix_logo.png" width="500">
 
-<p>
-<em>Your next movie obsession starts here. 🍿</em>
-</p>
+<p><em>Your next movie obsession starts here. 🍿</em></p>
+
+</div>
 
 <p>
 BingeFlix is a content-based movie recommendation system built with

@@ -1,20 +1,27 @@
-# 🎬 BingeFlix
+<div align="center">
 
-> **Your next movie obsession starts here. 🍿**
+<h1 style="color:#E50914; font-size:60px;">🍿 BingeFlix</h1>
 
-BingeFlix is a **content-based movie recommendation system** built with
-Python and Machine Learning. It recommends movies based on the similarity
-between movie features such as **genres, keywords, cast, and crew**.
+<p><em>Your next movie obsession starts here.</em> 🍿</p>
 
-The recommendation model is deployed as an interactive **Streamlit web
-application**, with movie posters and additional information fetched using
-the **TMDB API**.
+<p>
+BingeFlix is a content-based movie recommendation system built with
+Python and Machine Learning.<br>
+It recommends movies based on similarity between movie features such as
+genres, keywords, cast, and crew.
+</p>
+
+</div>
 
 ---
 
 ## 🚀 Live Demo
 
+<div align="center">
+
 👉 **[Try BingeFlix](https://bingeflix-o9l5xomtjivh323wuyqcw4.streamlit.app/)**
+
+</div>
 
 ---
 
@@ -22,13 +29,15 @@ the **TMDB API**.
 
 ### 🏠 BingeFlix Home
 
-![BingeFlix Home](<img width="960" height="1600" alt="BingeFlix_Homepage" src="https://github.com/user-attachments/assets/7e1d6b0c-0f38-4016-a005-d46d5cfec9dc" />
-)
+<p align="center">
+  <img src="Screenshots/BingeFlix_home.png" width="800">
+</p>
 
 ### 🎬 Movie Recommendations
 
-![BingeFlix Recommendations](<img width="1036" height="1600" alt="BingeFlix_recommendation" src="https://github.com/user-attachments/assets/d9158c83-0ba6-48da-bbec-e29fd12e8d68" />
-)
+<p align="center">
+  <img src="Screenshots/BingeFlix_recommendations.png" width="800">
+</p>
 
 ---
 
@@ -40,89 +49,46 @@ the **TMDB API**.
 - 🎭 Genre information
 - 🖼️ Movie posters using TMDB API
 - 🔥 Trending movies
-- 🎨 Dark-themed Streamlit interface
-- ⚡ Fast recommendations using precomputed similarity data
+- 🎨 Streamlit web interface
 
 ---
 
-## 🧠 How the Recommendation System Works
+## 🧠 How It Works
 
-BingeFlix uses a **content-based filtering approach**.
-
-### Step 1 — Dataset
-
-The project uses the **TMDB 5000 Movies** and **TMDB 5000 Credits**
-datasets.
-
-### Step 2 — Feature Selection
-
-Important movie information is extracted, including:
-
-- Genres
-- Keywords
-- Cast
-- Crew
-- Movie title
-- Movie ID
-
-### Step 3 — Feature Combination
-
-Relevant movie features are combined into a single textual representation
-for each movie.
-
-### Step 4 — Vectorization
-
-The text representation is converted into numerical vectors using
-**CountVectorizer**.
-
-### Step 5 — Similarity Calculation
-
-**Cosine similarity** is calculated between movie vectors to determine how
-similar two movies are.
-
-### Step 6 — Recommendation
-
-When a user selects a movie, BingeFlix finds the movies with the highest
-similarity scores and displays them as recommendations.
-
-### Step 7 — TMDB API
-
-The TMDB API is used to retrieve movie posters and additional movie
-information for the application.
+1. Movie data is loaded from the TMDB 5000 dataset.
+2. Relevant movie features are combined into a text representation.
+3. Features are converted into numerical vectors.
+4. Cosine similarity is used to measure similarity between movies.
+5. BingeFlix finds the most similar movies to the selected movie.
+6. TMDB API provides movie posters and additional information.
 
 ---
 
 ## 🗂️ Dataset
 
-The project uses:
+The project uses the **TMDB 5000 Movies** and **Credits** datasets.
 
-**TMDB 5000 Movies Dataset**
+### Main Features
 
-**TMDB 5000 Credits Dataset**
-
-Important features include:
-
+- Movie title
+- Movie ID
 - Genres
 - Keywords
 - Cast
 - Crew
-- Movie title
-- Movie ID
 
 ---
 
-## 🛠️ Technologies Used
+## 🛠️ Technologies
 
-| Technology | Purpose |
-|---|---|
-| 🐍 Python | Core programming |
-| 🐼 Pandas | Data manipulation |
-| 🔢 NumPy | Numerical operations |
-| 🤖 Scikit-learn | Machine learning & vectorization |
-| 🎨 Streamlit | Web application |
-| 🎬 TMDB API | Movie posters & information |
-| 📦 Pickle | Storing precomputed model data |
-| 🐙 GitHub | Version control & project hosting |
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Streamlit
+- TMDB API
+- Pickle
+- GitHub
 
 ---
 
@@ -132,22 +98,11 @@ Important features include:
 BingeFlix/
 │
 ├── BingeFlix.py
-│       └── Main Streamlit application
-│
 ├── movie_dict.pkl
-│       └── Processed movie information
-│
 ├── similarity.pkl
-│       └── Precomputed cosine similarity matrix
-│
-├── BingeFlix_home.png
-│       └── Application homepage screenshot
-│
-├── BingeFlix_recommendations.png
-│       └── Recommendation page screenshot
-│
+├── Screenshots/
+│   ├── BingeFlix_home.png
+│   └── BingeFlix_recommendations.png
 ├── README.md
-│       └── Project documentation
-│
 ├── .gitignore
 └── .gitattributes

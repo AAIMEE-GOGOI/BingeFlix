@@ -9,13 +9,10 @@
 </p>
 
 <p>
-A content-based movie recommendation system built with
-<strong>Python</strong> and <strong>Machine Learning</strong>.
-</p>
-
-<p>
-BingeFlix recommends movies based on similarity between movie features
-such as genres, keywords, cast, and crew.
+BingeFlix is a content-based movie recommendation system built with
+<strong>Python</strong> and <strong>Machine Learning</strong>.<br>
+It recommends movies based on similarity between movie features such as
+<strong>genres, keywords, cast, and crew</strong>.
 </p>
 
 </div>
@@ -32,79 +29,67 @@ such as genres, keywords, cast, and crew.
 
 ---
 
-## 📸 Screenshots
+## 🎬 Screenshots
 
 ### 🏠 BingeFlix Home
 
-<p align="center">
-  <img src="Screenshots/BingeFlix_home.png" width="800">
-</p>
+<div align="center">
 
-### 🎬 Movie Recommendations
+<img src="BingeFlix_Homepage.png" width="800">
 
-<p align="center">
-  <img src="Screenshots/BingeFlix_recommendations.png" width="800">
-</p>
+</div>
+
+---
+
+### 🍿 Movie Recommendations
+
+<div align="center">
+
+<img src="BingeFlix_recommendation.png" width="800">
+
+</div>
 
 ---
 
 ## ✨ Features
 
-- 🎬 Content-based movie recommendations
-- 🔎 Movie selection and search
-- ⭐ Movie ratings
-- 🍿 Personalized movie suggestions
-- 🎭 Recommendations based on movie features
-- 📊 Similarity-based recommendation model
-- 🌐 Interactive Streamlit web application
+- 🎬 Content-based movie recommendation
+- 🤖 Machine Learning powered similarity
+- 🍿 Simple and interactive Streamlit interface
+- 🔎 Select a movie and get similar recommendations
+- 🎭 Uses movie metadata such as genres, keywords, cast and crew
+- ⚡ Fast recommendations using precomputed similarity
+- 🎨 Netflix-inspired dark interface
 
 ---
 
 ## 🧠 How It Works
 
-BingeFlix uses a **content-based recommendation system**.
+BingeFlix uses a **content-based recommendation approach**.
 
-The system analyzes important movie features such as:
+Movie information is combined from different features such as:
 
-- 🎭 Genres
-- 🔑 Keywords
-- 👥 Cast
-- 🎬 Crew
-- 📝 Movie information
+- Genres
+- Keywords
+- Cast
+- Crew
+- Movie overview
 
-These features are combined to calculate the similarity between movies.
+These features are transformed into a numerical representation and compared using **cosine similarity**.
 
-When a user selects a movie, BingeFlix finds movies with similar features and recommends them.
-
----
-
-## 🛠️ Tech Stack
-
-| Technology | Usage |
-|------------|-------|
-| 🐍 Python | Core programming |
-| 🧮 Pandas | Data manipulation |
-| 🔢 NumPy | Numerical operations |
-| 🤖 Scikit-learn | Machine Learning |
-| 📓 Jupyter Notebook | Model development |
-| 🎨 Streamlit | Web application |
-| 🎥 TMDB API | Movie information & posters |
-| 💾 Pickle | Saving trained model data |
-| 🐙 GitHub | Version control & deployment |
-
----
-
-## 📂 Project Structure
+When a user selects a movie, BingeFlix finds movies with the highest similarity scores and recommends them.
 
 ```text
-BingeFlix/
-│
-├── Screenshots/
-│   ├── BingeFlix_home.png
-│   └── BingeFlix_recommendations.png
-│
-├── BingeFlix.py
-├── movie_dict.pkl
-├── similarity.pkl
-├── README.md
-└── .gitignore
+Movie Dataset
+      ↓
+Feature Extraction
+      ↓
+Feature Combination
+      ↓
+Text Vectorization
+      ↓
+Cosine Similarity
+      ↓
+Similar Movies
+      ↓
+BingeFlix Recommendations 🍿

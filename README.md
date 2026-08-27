@@ -2,7 +2,6 @@
 
 <img src="BingeFlix_logo.png" width="500">
 
-<p><em>Your next movie obsession starts here. 🍿</em></p>
 
 </div>
 

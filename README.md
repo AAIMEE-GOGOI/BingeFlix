@@ -48,6 +48,15 @@ It recommends movies based on similarity between movie features such as
 
 ---
 
+## 📁 Project Files
+
+- `BingeFlix.py` — Streamlit web application
+- `movie_dict.pkl` — Processed movie data used by the recommendation system
+- `similarity.pkl` — Precomputed similarity matrix for recommendations
+- `BingeFlix_logo.png` — Project logo
+- `BingeFlix_Homepage.png` — Homepage screenshot
+- `BingeFlix_recommendation.png` — Recommendation screenshot
+
 ## ✨ Features
 
 - 🎬 Content-based movie recommendation

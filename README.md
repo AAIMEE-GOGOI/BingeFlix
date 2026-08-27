@@ -1,14 +1,21 @@
 <div align="center">
 
-<h1 style="color:#E50914; font-size:60px;">🍿 BingeFlix</h1>
-
-<p><em>Your next movie obsession starts here.</em> 🍿</p>
+<h1>
+<font color="#E50914">🍿 BingeFlix</font>
+</h1>
 
 <p>
-BingeFlix is a content-based movie recommendation system built with
-Python and Machine Learning.<br>
-It recommends movies based on similarity between movie features such as
-genres, keywords, cast, and crew.
+<em>Your next movie obsession starts here. 🍿</em>
+</p>
+
+<p>
+A content-based movie recommendation system built with
+<strong>Python</strong> and <strong>Machine Learning</strong>.
+</p>
+
+<p>
+BingeFlix recommends movies based on similarity between movie features
+such as genres, keywords, cast, and crew.
 </p>
 
 </div>
@@ -44,65 +51,60 @@ genres, keywords, cast, and crew.
 ## ✨ Features
 
 - 🎬 Content-based movie recommendations
-- 🔍 Movie selection and search
+- 🔎 Movie selection and search
 - ⭐ Movie ratings
-- 🎭 Genre information
-- 🖼️ Movie posters using TMDB API
-- 🔥 Trending movies
-- 🎨 Streamlit web interface
+- 🍿 Personalized movie suggestions
+- 🎭 Recommendations based on movie features
+- 📊 Similarity-based recommendation model
+- 🌐 Interactive Streamlit web application
 
 ---
 
 ## 🧠 How It Works
 
-1. Movie data is loaded from the TMDB 5000 dataset.
-2. Relevant movie features are combined into a text representation.
-3. Features are converted into numerical vectors.
-4. Cosine similarity is used to measure similarity between movies.
-5. BingeFlix finds the most similar movies to the selected movie.
-6. TMDB API provides movie posters and additional information.
+BingeFlix uses a **content-based recommendation system**.
+
+The system analyzes important movie features such as:
+
+- 🎭 Genres
+- 🔑 Keywords
+- 👥 Cast
+- 🎬 Crew
+- 📝 Movie information
+
+These features are combined to calculate the similarity between movies.
+
+When a user selects a movie, BingeFlix finds movies with similar features and recommends them.
 
 ---
 
-## 🗂️ Dataset
+## 🛠️ Tech Stack
 
-The project uses the **TMDB 5000 Movies** and **Credits** datasets.
-
-### Main Features
-
-- Movie title
-- Movie ID
-- Genres
-- Keywords
-- Cast
-- Crew
-
----
-
-## 🛠️ Technologies
-
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Streamlit
-- TMDB API
-- Pickle
-- GitHub
+| Technology | Usage |
+|------------|-------|
+| 🐍 Python | Core programming |
+| 🧮 Pandas | Data manipulation |
+| 🔢 NumPy | Numerical operations |
+| 🤖 Scikit-learn | Machine Learning |
+| 📓 Jupyter Notebook | Model development |
+| 🎨 Streamlit | Web application |
+| 🎥 TMDB API | Movie information & posters |
+| 💾 Pickle | Saving trained model data |
+| 🐙 GitHub | Version control & deployment |
 
 ---
 
-## 📁 Project Structure
+## 📂 Project Structure
 
 ```text
 BingeFlix/
 │
-├── BingeFlix.py
-├── movie_dict.pkl
-├── similarity.pkl
 ├── Screenshots/
 │   ├── BingeFlix_home.png
 │   └── BingeFlix_recommendations.png
+│
+├── BingeFlix.py
+├── movie_dict.pkl
+├── similarity.pkl
 ├── README.md
-├── .gitignore
-└── .gitattributes
+└── .gitignore
